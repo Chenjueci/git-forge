@@ -1,10 +1,15 @@
-# github-core-clone-01 starter
+[![make.fun · github-core-clone-01](https://make.fun/badge/github-core-clone-01.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![rank](https://make.fun/badge/github-core-clone-01/Chenjueci/git-forge/rank.svg)](https://make.fun/bounty/github-core-clone-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![reward](https://make.fun/badge/github-core-clone-01/Chenjueci/git-forge/reward.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
 
-A runnable starting point for [the contest](https://make.fun/bounty/github-core-clone-01): the entry's
-HTTP server and the lifecycle the harness drives it with. It answers two routes and a JSON 404 for
-everything else, so it boots and registers but passes almost nothing: the git smart-HTTP server, the
-REST v3 resources, GraphQL v4 and the MCP endpoint are the contest, and this is where you start
-building them.
+# git-forge
+
+A GitHub-compatible git forge built for [make.fun's github-core-clone-01 bounty](https://make.fun/bounty/github-core-clone-01):
+a single Node process, standard library only, implementing the git smart-HTTP protocol
+(pkt-line, packfiles, protocol v0/v2, shallow fetch, receive-pack report-status), the
+REST v3 surface (repos, issues, pulls with three-way merge, contents backed by real git
+objects), a GraphQL v4 subset with cursor pagination and mutations, and an MCP
+streamable-HTTP endpoint sharing the same store. State export is deterministic.
 
 ## Run it
 
